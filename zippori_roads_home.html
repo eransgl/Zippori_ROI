@@ -1,0 +1,140 @@
+<div>
+    <div>
+        <div>
+          <div>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>The Paths of Zippori</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    header {
+                        background-color: #333;
+                        color: #fff;
+                        padding: 20px;
+                        text-align: center;
+                    }
+                    .container {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        padding: 20px;
+                    }
+                    .instructions {
+                        background-color: #f0f0f0;
+                        padding: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+                    iframe {
+                        width: 100%;
+                        height: 500px; /* Adjust the height as needed */
+                        border: none;
+                    }
+                    .language-select {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                </style>
+            </head>
+            <body>
+                <header>
+                    <div class="header-content">
+                        <img src="zipporiPathsLogo.png" alt="Zippori Paths Logo">
+        
+                        <div class="header-text language-text" lang="he" dir="rtl"  style="display: block;">
+                            <h2>"ששה עשר מיל חיזור חיזור לציפורי הן הן ארץ זבת חלב ודבש"</h2>
+                            <h4>(ירושלמי, ביכורים ו&#39; ע&quot;א)</h4>
+                        </div>
+                        <!-- <div class="header-text language-text" lang="en" style="display: none;">
+                            <h2>"Sixteen mil in a circle around Sepphoris is the Land flowing with milk and honey"</h2>
+                            <h4>(Jerusalem Talmud Bikkurim 1:8)</h4>
+                        </div>
+                        <div class="header-text language-text" lang="ar" dir="rtl"  style="display: none;">
+                            <h2>"ستة عشر مليونًا في دائرة حول صفوريس هي الأرض التي تفيض لبنًا وعسلًا"</h2>
+                            <h4>(التلمود اليروشلمي)</h4>
+                        </div> -->
+                    </div>
+                </header>
+                <div class="container">
+                    <!-- <div class="language-select">
+                        <label for="language-select">Select Language:</label>
+                        <select id="language-select">
+                            <option value="he">🇮🇱 עברית (Hebrew)</option>
+                            <option value="en">🇺🇸 English</option>
+                            <option value="ar">🇵🇸 العربية  (Arabic)</option>
+                        </select>
+                    </div> -->
+                    <div class="instructions language-text" lang="he" dir="rtl"  style="display: block;">
+                        <!-- <h2 id="instructions-title-he">הוראות:</h2> -->
+                        <p>
+                          דף זה יכלול מידע על אפשרויות השימוש במפה והנחיות לשימוש בה.
+                        </p>
+                        <p>
+                            לצפייה במפה במסך מלא, ניתן ללחוץ על הכפתור בפינה הימנית העליונה:
+                            (<svg height="20" width="20" viewBox="0 0 36 36" style="vertical-align: middle;">
+                                <path d="m 10,16 2,0 0,-4 4,0 0,-2 L 10,10 l 0,6 0,0 z"></path>
+                                <path d="m 20,10 0,2 4,0 0,4 2,0 L 26,10 l -6,0 0,0 z"></path>
+                                <path d="m 24,24 -4,0 0,2 L 26,26 l 0,-6 -2,0 0,4 0,0 z"></path>
+                                <path d="M 12,20 10,20 10,26 l 6,0 0,-2 -4,0 0,-4 0,0 z"></path>
+                            </svg>)
+                        </p>
+                        
+                    </div>
+                    <!-- <div class="instructions language-text" lang="en" style="display: none;">
+                      <h2 id="instructions-title">Instructions:</h2>
+                      <p>
+                        This page will include information on the options for using the map and instructions for using it.
+                      </p>
+                  </div>
+                  <div class="instructions language-text" lang="ar" dir="rtl" style="display: none;">
+                      <h2 id="instructions-title-ar">التعليمات:</h2>
+                      <p>
+                        ستتضمن هذه الصفحة معلومات حول خيارات استخدام الخريطة وتعليمات استخدامها.
+                      </p>
+                  </div> -->
+                    <h2>Google My Maps:</h2>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1REUD058MJV8piq3NwbRN67IYR6IRT3o&ehbc=2E312F" width="640" height="480" frameborder="0"></iframe>
+                </div>
+            
+        <!-- JavaScript placed at the end of the document -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const languageSelect = document.getElementById('language-select');
+                const languageText = document.querySelectorAll('.language-text');
+                // const instructions = document.querySelectorAll('.instructions');
+        
+                languageSelect.addEventListener('change', function () {
+                    const selectedLanguage = this.value;
+                    
+                    languageText.forEach(lanText => {
+                        const lang = lanText.getAttribute('lang');
+                        if (lang === selectedLanguage) {
+                            lanText.style.display = 'block';
+                        } else {
+                            lanText.style.display = 'none';
+                        }
+                    });
+                    // instructions.forEach(instruction => {
+                    //     const lang = instruction.getAttribute('lang');
+                    //     if (lang === selectedLanguage) {
+                    //         instruction.style.display = 'block';
+                    //     } else {
+                    //         instruction.style.display = 'none';
+                    //     }
+                    // });
+                });
+            });
+        </script>
+            </body>
+            </html>
+            
+          </div>
+        </div>
+    </div>
+</div>
