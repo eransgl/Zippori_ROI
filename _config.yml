@@ -1,0 +1,61 @@
+# Site settings
+title: The Paths of Zippori
+description: Explore Zippori and its surroundings with our interactive map.
+baseurl: "" # The subpath of your site, e.g., /blog/
+url: "https://your-website-url.com" # The base hostname & protocol for your site
+
+# Build settings
+theme: minima # You can change this to the Jekyll theme you prefer
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Permalinks
+permalink: pretty
+
+# Language settings
+default_lang: en # Default language (change to your preferred default language)
+languages:
+  - en
+  - he
+  - ar
+
+# Navigation
+navbar_links:
+  - text: Home
+    url: "/"
+  - text: About
+    url: "/about/"
+  - text: Contact
+    url: "/contact/"
+
+# Excerpt separator
+excerpt_separator: "<!--more-->"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Google Analytics (Optional - uncomment and add your tracking code)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Disqus Comments (Optional - uncomment and add your Disqus shortname)
+# disqus_shortname: your-disqus-shortname
+
+# Author (Optional - replace with your information)
+author:
+  name: Your Name
+  bio: Web Developer
+  location: Your Location
+
+# Social media links (Optional - replace with your social media profiles)
+social:
+  - title: GitHub
+    url: https://github.com/your-github-username
+  - title: Twitter
+    url: https://twitter.com/your-twitter-username
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/your-linkedin-profile
+
+# Additional configuration options can be added as needed.
